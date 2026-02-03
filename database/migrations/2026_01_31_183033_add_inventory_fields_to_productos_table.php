@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void {
         Schema::table('productos', function (Blueprint $table) {
-            $table->string('sku')->nullable()->after('nombre');
             $table->string('unidad', 20)->default('unidad')->after('precio');
             $table->integer('stock')->default(0)->after('unidad');
             $table->integer('stock_minimo')->default(0)->after('stock');
@@ -18,7 +17,7 @@ return new class extends Migration {
     }
     public function down(): void {
         Schema::table('productos', function (Blueprint $table) {
-            $table->dropColumn(['sku','unidad','stock','stock_minimo','ubicacion','lote','fecha_caducidad']);
+            $table->dropColumn(['unidad','stock','stock_minimo','ubicacion','lote','fecha_caducidad']);
         });
     }
 };
