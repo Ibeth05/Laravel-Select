@@ -38,7 +38,7 @@
                href="{{ route('productos.create') }}"><i class="bi bi-plus-circle"></i> Nuevo (varios)</a>
           </li>
         </ul>
-        <span class="navbar-text">Laravel ♥ Bootstrap</span>
+        <span class="navbar-text">Laravel  Bootstrap</span>
       </div>
     </div>
   </nav>
@@ -56,7 +56,7 @@
 
   <footer class="bg-light border-top">
     <div class="container py-3 text-center text-muted">
-      Hecho con <span style="color:#e25555;">♥</span> en Guayaquil — {{ date('Y') }}
+     <span style="color:#e25555;"> </span>  Guayaquil — {{ date('Y') }}
     </div>
   </footer>
 
