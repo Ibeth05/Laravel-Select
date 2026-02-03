@@ -1,7 +1,7 @@
 <?php
 
 namespace Tests\Feature;
-
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 use App\Models\Producto;
 use App\Models\Categoria;
